@@ -1,0 +1,156 @@
+.footer {
+  background-image: url('./../../assets/BGFooter.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+
+  .top-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 100px 80px 120px;
+    text-align: start;
+
+    .logo {
+      max-width: 150px;
+      cursor: pointer;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .social {
+      display: flex;
+      margin-top: 40px;
+      gap: 24px;
+      cursor: pointer;
+    }
+
+    .right-item {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+
+      .Address,
+      .Subscribe {
+        max-width: 350px;
+      }
+    }
+  }
+
+  .content {
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+
+  .footer-title {
+    margin-bottom: 35px;
+  }
+
+  .email {
+    max-width: 350px;
+    margin: auto;
+
+    & ::placeholder {
+      color: #fffefe !important;
+      opacity: 1;
+    }
+
+    .ant-input-outlined {
+      background: transparent;
+    }
+
+    input {
+      height: 42px;
+      color: #fff;
+    }
+  }
+
+  .hidden {
+    opacity: 0;
+  }
+
+  .bottom-footer {
+    height: 60px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    .top-footer {
+      padding: 40px 25px;
+
+      .left-item {
+        margin: auto;
+      }
+
+
+      .right-item {
+        display: grid;
+        justify-content: center;
+        gap: 25px;
+
+        .Address,
+        .Subscribe {
+          margin-top: 40px;
+        }
+      }
+    }
+
+    .content {
+      margin-bottom: 10px;
+    }
+
+    .footer-title {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    .top-footer {
+      display: block;
+      padding: 40px 25px;
+
+      .logo {
+        margin: auto;
+      }
+
+      .social {
+        margin: 30px auto;
+        gap: 24px;
+        justify-content: center;
+      }
+
+      .right-item {
+        display: grid;
+        justify-content: center;
+        gap: 25px;
+
+        .Address,
+        .Subscribe {
+          margin-top: 40px;
+        }
+      }
+    }
+
+    .content {
+      margin-bottom: 10px;
+    }
+
+    .footer-title {
+      margin-bottom: 30px;
+    }
+  }
+}
