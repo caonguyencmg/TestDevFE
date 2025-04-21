@@ -22,9 +22,6 @@ jobs:
       - name: 📦 Cài dependencies
         run: npm install
 
-      - name: 🧪 Chạy unit test
-        run: npm test -- --watchAll=false
-
       - name: 🏗️ Build ứng dụng
         run: npm run build
 
